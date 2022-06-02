@@ -21,7 +21,7 @@ public class VectorND extends Vector {
         Point point = findVectorCoordinates();
         double sum = 0;
         for (int i = 0; i < point.getCoordinates().length; i++) {
-            sum = sum + Math.sqrt(Math.pow(point.getCoordinates()[i], 2));
+            sum = sum + Math.pow(point.getCoordinates()[i], 2);
         }
         double length = Math.sqrt(sum);
         return length;
